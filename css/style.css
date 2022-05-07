@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Tahoma';
+    font-size: 16px;
+}
+
+.tombola {
+    position: relative;
+    width: 525px;
+    height: 457px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border: 1px rgba(255, 255, 255, 0.9) solid;
+    background: radial-gradient(ellipse at 70% 40%, red 0%, rgba(0, 0, 0, 0.7) 100%);
+    box-shadow: 0 50px 300px white;
+}
+
+.instruction {
+    width: 525px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.instruction__title {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.instruction__text {
+    font-size: 1;
+    margin: 10px auto;
+}
+
+.tombola__warrior {
+    position: absolute;
+    width: 314px;
+    height: 312px;
+    background-image: url(../img/warrior.png);
+    z-index: 99;
+}
+
+.tombola__wheel {
+    position: absolute;
+    left: 210px;
+    width: 314px;
+    height: 312px;
+    margin: 0 auto;
+    background-image: url(../img/wheel.png);
+}
+
+.tombola__test {
+    position: absolute;
+    top: 135px;
+    left: 327px;
+    z-index: 999;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.tombola__test:disabled {
+    opacity: 0;
+}
+
+.tombola__test:enabled:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tombola__button {
+    display: block;
+    margin: 350px auto 0 auto;
+    padding: 5px 15px;
+}
+
+.tombola__level {
+    margin: 350px auto;
+    width: 100%;
+    height: 22px;
+    color: white;
+}
+
+.tombola__level-box {
+    flex: 1;
+}
+
+.tombola__level-text {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.tombola__experience {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.tombola__experience-point {
+    width: 50px;
+    height: 20px;
+    margin: 1px;
+    background-color: black;
+    box-shadow: 0px 20px 40px #d9cfd3 inset;
+                
+}
+
+.--point {
+    background-color: black;
+    box-shadow: 0px 20px 40px #ae7379 inset;
+    
+}
+
+.tombola__max-level {
+    background-color: darkorange;
+    width: 100%;
+    text-align: center;
+}
+
+.tombola__timer {
+    position: absolute;
+    height: 20px;
+    /*margin: 10px 90px;*/
+    margin: 20px 231px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.tombola__window-with-award {
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    margin: 0 auto;
+    width: 90%;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    background: radial-gradient(ellipse at 70% 40%, red 0%, rgba(0, 0, 0, 1) 100%);
+    border: 1px solid white;
+    z-index: 999;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.tombola__award {
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.tombola__award-image {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.--award {
+    display: relative;
+    margin: 0 auto;
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.8em;
+    transition: all 0.2s;
+}
+
+.--award:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.award-icon-0 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 140px;
+    top: 15px;
+}
+
+.award-icon-1 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 190px;
+    top: 25px;
+}
+
+.award-icon-2 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 230px;
+    top: 50px;
+}
+
+.award-icon-3 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 260px;
+    top: 90px;
+}
+
+.award-icon-4 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 270px;
+    top: 140px;
+}
+
+.award-icon-5 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 260px;
+    top: 190px;
+}
+
+.award-icon-6 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 230px;
+    top: 230px;
+}
+
+.award-icon-7 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 190px;
+    top: 255px;
+}
+
+.award-icon-8 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 140px;
+    top: 270px;
+}
+
+.award-icon-9 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 90px;
+    top: 255px;
+}
+
+.award-icon-10 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50px;
+    top: 230px;
+}
+
+.award-icon-11 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 25px;
+    top: 190px;
+}
+
+.award-icon-12 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    top: 140px;
+}
+
+.award-icon-13 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 25px;
+    top: 90px;
+}
+
+.award-icon-14 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.award-icon-15 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 90px;
+    top: 25px;
+}

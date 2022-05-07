@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Tombola - koło losu</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <article class="instruction">
+        <h1 class="instruction__title">Tombola - koło losu</h1>
+        <p class="instruction__text">Prosta minigra oparta o świat Metin2, polegająca na losowaniu nagrody.</p>
+        <p class="instruction__text">Z każdym losowaniem zwiększa się nasze doświadczenie, a co za tym idzie możemy awansować na kolejne poziomy, które mogą różnić się nagrodami czy szansą na wylosowanie poszczególnych pól. Trzeba jednak się spieszyć, ponieważ na danym poziomie można być tylko przez określony czas - inaczej spadamy na 1 lvl.</p>
+    </article>
+    
+    <section class="tombola">
+        <div class="tombola__warrior"></div>
+        <div class="tombola__wheel"></div>
+        <button class="tombola__test" type="button">Losuj</button>
+        <div class="tombola__level">
+            <div class="tombola__level-box">
+                <p class="tombola__level-text">POZIOM 1</p>
+                <div class="tombola__experience">
+                    <div class="tombola__experience-point"></div>
+                    <div class="tombola__experience-point"></div>
+                    <div class="tombola__experience-point"></div> 
+                </div>
+            </div>
+            <p class="tombola__timer">00:00</p>
+        </div>
+        
+        <div class="tombola__window-with-award">
+            <img class="tombola__award-image">
+            <p class="tombola__award">Wygrałeś</p>
+            <button class="tombola__button --award" type="button">Zamknij</button>
+        </div>
+    </section>  
+    
+    <footer class="footer">
+        <small>&copy; Copyright 2018 Sebastian Kaczor All Rights Reserved.</small>
+    </footer>
+    
+<script src="js/script.js"></script>
+</body>
+</html>
